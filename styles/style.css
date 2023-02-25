@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Roboto&display=swap');
+
+:root{
+    --cor-primaria: #000000;
+    --cor-secundaria: #22D4FD;
+    --cor-terciaria: #f6f6f6;
+    --cor-quartenaria: #C147E9;
+    --cor-hover-dois: #0e4f5d;
+    --cor-hover-um: #0098ba;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+}
+
+.foto{
+     width: 50%;
+     border-radius: 500%;
+     border: 10px inset var(--cor-quartenaria);
+}
+
+.cabecalho{
+    padding: 1% 0% 0% 15%;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__link{
+
+    color: var(--cor-secundaria);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.cabecalho__link:hover{
+    color: var(--cor-hover-um);
+}
+
+.apresentacao{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 15% 2% 15%;
+    gap: 58px;
+}
+
+.apresentacao__subtexto{
+    color: var(--cor-terciaria);
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 30px;
+}
+
+.titulo{
+    color: var(--cor-terciaria);
+    font-size: 2.25rem;
+    font-family: 'Krona One', sans-serif;;
+}
+
+.destaque__titulo{
+    color: var(--cor-secundaria);
+}
+
+.apresentacao__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.apresentacao__link__subititulo{
+    color: var(--cor-terciaria);
+    font-family: 'Krona One', sans-serif;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 2px;
+}
+
+.apresentacao__link__botoes{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    /* margin: 32px; */
+}
+
+.botao__link{
+    display: flex;                                                  /*-----||||/// CRIADO POR JEAN \\\||||-----*/
+    justify-content: center;                                        /*-----||||/// CRIADO POR JEAN \\\||||-----*/
+    gap: 16px;                                                      /*-----||||/// CRIADO POR JEAN \\\||||-----*/
+    width: 70%;                                                     /*-----||||/// CRIADO POR JEAN \\\||||-----*/
+    padding: 21.5px 0;                                              /*-----||||/// CRIADO POR JEAN \\\||||-----*/
+    margin: 5px;                                                    /*-----||||/// CRIADO POR JEAN \\\||||-----*/
+    text-decoration: none;                                          /*-----||||/// CRIADO POR JEAN \\\||||-----*/
+    text-align: center;                                             /*-----||||/// CRIADO POR JEAN \\\||||-----*/
+    font-size: 1.5rem;                                              /*-----||||/// CRIADO POR JEAN \\\||||-----*/
+    border-radius: 13px;                                            /*-----||||/// CRIADO POR JEAN \\\||||-----*/
+    border: 5px inset var(--cor-secundaria);                        /*-----||||/// CRIADO POR JEAN \\\||||-----*/
+    color: var(--cor-terciaria);                                    /*-----||||/// CRIADO POR JEAN \\\||||-----*/
+    font-family: 'Montserrat', sans-serif;                          /*-----||||/// CRIADO POR JEAN \\\||||-----*/
+}
+
+.botao__link:hover{
+    background-color: var(--cor-hover-dois);
+}
+
+.rodape{
+    width: auto;
+    display: flex;
+    color: var(--cor-primaria);
+    background-color: var(--cor-secundaria);
+    flex-direction: column;
+    padding: 25px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    gap: 10%;
+}
+
+.rodape__link:hover{
+    color: var(--cor-quartenaria);
+}
+
+.rodape__link{
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    color: var(--cor-primaria);
+}
+
+@media (max-width: 1325px){
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 1% 5% 2% 5%;
+    }
+    .cabecalho__menu{
+        justify-content: center;
+    }
+    .cabecalho{
+        padding: 7% 5% 7% 5%;
+        width: auto;
+    }
+    .apresentacao__conteudo{
+        width: auto;
+    }
+}
